@@ -1,0 +1,318 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Astone Banda — Software Developer & IoT Engineer</title>
+  <!-- External CSS & JS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Custom cursor elements -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Animated particle background -->
+  <div id="particles-bg"><canvas id="canvas"></canvas></div>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav id="navbar">
+    <div class="nav-logo">  <span>.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero" class="pos-relative">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag" data-aos="fade-down" data-aos-delay="100">
+            <i class="fa-solid fa-circle-dot"></i> 
+          </div>
+          <h1 class="hero-name" data-aos="fade-up" data-aos-delay="200">
+            <span class="line">Astone</span>
+            <span class="line accent">Banda</span>
+          </h1>
+          <div class="typing-wrap" data-aos="fade-up" data-aos-delay="300">
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor"></span>
+          </div>
+          <p class="hero-bio" data-aos="fade-up" data-aos-delay="400">
+            A passionate software developer from Zambia, crafting intelligent systems and web experiences. I blend code with creativity to build solutions that matter — from IoT systems to AI-powered applications.
+          </p>
+          <div class="hero-ctas" data-aos="fade-up" data-aos-delay="500">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+            <a href="Aston_Banda _CV.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="5">0</span><span>+</span></div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="2">0</span><span>+</span></div>
+              <div class="stat-label">Years Coding</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num"><span class="counter" data-target="8">0</span><span>+</span></div>
+              <div class="stat-label">Technologies</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="300">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar">
+  <img src="pxx.jpg" alt="Astone Banda" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div>
+            <div class="floating-icon fi-1"><i class="fa-brands fa-js"></i></div>
+            <div class="floating-icon fi-2"><i class="fa-brands fa-python"></i></div>
+            <div class="floating-icon fi-3"><i class="fa-solid fa-microchip"></i></div>
+            <div class="floating-icon fi-4"><i class="fa-solid fa-brain"></i></div>
+            <div class="hero-badge">
+                <div class="hero-badge-text">
+                <strong>Lusaka, Zambia<i class="fa-solid fa-location-dot"></i></strong>
+                <span>Open to opportunites</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== QUALIFICATIONS ======================== -->
+  <section id="qualifications" class="pos-relative">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Qualifications &amp; <span>Achievements</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">A solid academic foundation paired with hands-on technical skills and continuous learning.</p>
+      </div>
+      <div class="qual-grid">
+        <div class="qual-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="qual-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>BSc Computer Science</h3>
+          <p>Bachelor of Science in Computer Science from Mulungushi University — comprehensive study covering algorithms,Artificial Intelligence ,Cloud Computing, data structures, software engineering, databases, and networking.</p>
+          <div class="qual-meta"><i class="fa-solid fa-calendar"></i> 2021 – 2025</div>
+        </div>
+        <div class="qual-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="qual-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Certifications</h3>
+          <ul class="achievements-list">
+            <li><i class="fa-solid fa-check-circle"></i> Cisco Networking Fundamentals (IoT)</li>
+            <li><i class="fa-solid fa-check-circle"></i> Python for Data Science — Coursera</li>
+            <li><i class="fa-solid fa-check-circle"></i> AI/ML Fundamentals — Google</li>
+            <li><i class="fa-solid fa-check-circle"></i> Web Development Bootcamp-FreeCodeCamp</li>
+          </ul>
+        </div>
+        <div class="qual-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="qual-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>Key Achievements</h3>
+          <ul class="achievements-list">
+            <li><i class="fa-solid fa-star"></i> Built 5+ full-stack software systems</li>
+            <li><i class="fa-solid fa-star"></i> Developed AI-powered resume screener</li>
+            <li><i class="fa-solid fa-star"></i> Deployed smart IoT lighting system</li>
+            <li><i class="fa-solid fa-star"></i> Active contributor to open-source</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills" class="pos-relative">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Technologies and tools I use to build modern, scalable, and intelligent software solutions.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Skills injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects" class="pos-relative">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">A collection of real-world projects spanning IoT, AI, web systems, and data science.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERIENCE ======================== -->
+  <section id="experience" class="pos-relative">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2024 – Present</span>
+              <span class="timeline-type">Freelance</span>
+            </div>
+            <h3>Full-Stack Developer</h3>
+            <div class="timeline-company">Self-Employed · Remote</div>
+            <p class="timeline-desc">Building custom web applications for local businesses and startups. Delivered lodging management systems, school management platforms, and AI-based tools. Tech stack: PHP, JavaScript, Python, MySQL.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="timeline-dot"><i class="fa-solid fa-microchip"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2025</span>
+              <span class="timeline-type">Project</span>
+            </div>
+            <h3>IoT Developer — Smart Lighting Project</h3>
+            <div class="timeline-company">Mulungushi University · Kabwe</div>
+            <p class="timeline-desc">Designed and developed an automated smart lighting system using Arduino with a web dashboard for remote control and energy monitoring. Integrated sensor data pipelines and real-time alerts.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-dot"><i class="fa-solid fa-brain"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-date">2026</span>
+              <span class="timeline-type">Project</span>
+            </div>
+            <h3>AI Research Project</h3>
+            <div class="timeline-company">Computer Science Department</div>
+            <p class="timeline-desc">Developed an AI-powered resume screening system using NLP (spaCy, scikit-learn) that automates candidate filtering. Achieved 87% accuracy on benchmark dataset.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="pos-relative">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Say Hello 👋</h3>
+          <p>I'm currently open to freelance projects, internships, and full-time opportunities. Let's build something great together.</p>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-text"><span>Email</span>astonbn@email.com</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item-text"><span>Phone</span>+260 977838149</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-item-text"><span>Location</span>Lusaka, Zambia</div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <p>Designed &amp; built with <span>♥</span> by <strong>Astone Banda</strong></p>
+      <p style="margin-top:8px;font-size:0.78rem;">© 2025 All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Toast notification -->
+  <div id="toast"><i class="fa-solid fa-check-circle"></i> <span id="toast-msg"></span></div>
+
+  <!-- External libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
